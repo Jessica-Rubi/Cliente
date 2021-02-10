@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/_64b6af1e2428aed06246af0c6581efb">
 
     <EditText
         android:id="@+id/txtPassword"
@@ -45,28 +46,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
-    <Button
-        android:id="@+id/btnGuardar"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
-        android:text="Registrar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnCancelar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnCancelar" />
-
-    <Button
-        android:id="@+id/btnCancelar"
-        android:layout_width="167dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:text="Cancelar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
-
     <EditText
         android:id="@+id/txtNombre"
         android:layout_width="0dp"
@@ -75,10 +54,36 @@
         android:layout_marginBottom="197dp"
         android:ems="10"
         android:hint="Nombre"
-        app:layout_constraintBottom_toTopOf="@+id/btnCancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:background="#99B1D6"
+        android:text="Cancelar"
+        app:backgroundTint="#46539C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTel" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="104dp"
+        android:background="#99B1D6"
+        android:text="Guardar"
+        app:backgroundTint="#46539C"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

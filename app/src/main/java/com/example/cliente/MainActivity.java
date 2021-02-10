@@ -48,8 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
                 Uri uriresult = cr.insert(MiProveedorContenidoContract.Usuarios.CONTENT_URI,
                         cv);
+//                int uriresult = cr.update(MiProveedorContenidoContract.Usuarios.CONTENT_URI,
+//                        cv, "nombre=?",
+//                        new String[]{ String.valueOf(nombre)});
                 Log.d("MICP", uriresult.toString());
-
+//                Log.d("MICP", uriresult+"");
                 Cursor cursor = getContentResolver().query(
                         MiProveedorContenidoContract.Usuarios.CONTENT_URI,
                         null, null, null, null);
